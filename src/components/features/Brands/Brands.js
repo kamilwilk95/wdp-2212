@@ -14,7 +14,7 @@ const Brands = () => {
         </div>
         <div className='row d-flex w-100 m-3 text-center'>
           {brands.map(item => (
-            <div key={item} className='col m-2 border'>
+            <div key={item} className={`col m-2 border ${styles.imageContainer}`}>
               <img
                 className={styles.image}
                 src={`${process.env.PUBLIC_URL}/images/brands/${item.photo}`}

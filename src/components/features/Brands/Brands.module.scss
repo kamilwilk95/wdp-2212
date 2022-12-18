@@ -1,3 +1,5 @@
+@import "../../../styles/mediaQueriesMixins.scss";
+
 .brands {
   display: flex;
   text-align: center;
@@ -14,6 +16,20 @@
   padding: 17px 0;
 }
 
-.image {
+.imageContainer {
+  max-width: 300px;
+
+  @include for-phone {
+    max-width: 120px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   width: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
